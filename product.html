@@ -1,48 +1,101 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Atari 2600</title>
-        <link rel="stylesheet" href="assets/images/styles/styles.css">
-        <!--selector por clave-->
-        <style>
-            h1 {
-                color: blue;
-            }
-           
-        </style>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <title>Gorras</title>
+    <style>
+        h1 {
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+
+        #productDetailsTitle {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Atari 2600</h1>
-    <img src="assets/images/Atari.jpg" width="500px">
-    <p style="font-size: 11px;">
-        <h2>Detalles</h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare mauris sed elementum mollis. Pellentesque sed dolor ut magna commodo iaculis in vel mi. Donec egestas aliquam dui in euismod. Phasellus a felis ex. Maecenas et dui sit amet sapien pulvinar interdum in rhoncus lacus. Sed quis vulputate quam. Mauris mi mauris, tempor nec ex id, facilisis euismod nisl. Quisque id semper ipsum, quis ornare magna. Maecenas maximus leo nec sapien suscipit scelerisque. Cras neque nibh, cursus non augue a, consectetur viverra dolor. Pellentesque et turpis enim. Donec sem libero, rhoncus sed lobortis quis, viverra et tellus.
+    <ul>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </ul>
+    <h1>Gorras</h1>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Gorras</li>
+        </ol>
+    </nav>
+    <div class="content">
+        <div class="row gx=10">
+            <div class="col col-md-3">
+                <!--<p style="background-color: blue; height: 100px;"></p>-->
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/gorras.jpg" class="card-img-top img-fluid" alt="Chesscake">
+                    <div class="card-body">
+                        <h5 class="card-title">Gorras Planas  </h5>
+                        <p class="card-text">
+                            Experimenta la fusión perfecta entre estilo y rendimiento con nuestras gorras planas Nike. Diseñadas con la emblemática calidad de la marca, estas gorras capturan la esencia del deporte y la moda urbana. Confeccionadas con materiales de primera calidad y un ajuste cómodo, cada gorra ofrece una combinación única de sofisticación y versatilidad.
 
-Quisque accumsan ipsum sit amet massa pulvinar gravida. Quisque nec euismod magna. Donec maximus augue eget lacus tempus, et vestibulum tortor varius. Aliquam mollis gravida neque quis ullamcorper. Nulla dapibus, orci ac feugiat pellentesque, dolor nisi tempor nibh, vel lacinia nisl metus et massa. Ut rutrum sit amet erat volutpat aliquam. Praesent porta sem quis sem hendrerit, euismod ultrices ante dignissim. Phasellus lorem eros, viverra id est nec, ornare venenatis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut pellentesque sem vel dignissim convallis. Sed nibh ex, laoreet convallis scelerisque at, euismod at nibh.
-    </p>
-    <p>Precio: $ 1600
+Las gorras planas Nike son mucho más que un accesorio; son una declaración de estilo audaz. Desde el emblemático swoosh hasta los detalles cuidadosamente elaborados, cada gorra refleja la calidad artesanal que ha convertido a Nike en un ícono global. Disponibles en una gama de colores y diseños que van desde lo clásico hasta lo vanguardista, estas gorras son el complemento perfecto para cualquier atuendo, ya sea para un día casual o para destacar en un evento.
 
-    </p>
+Haz que tu estilo se destaque con las gorras planas Nike, una combinación perfecta de moda y funcionalidad que te llevará más allá de los límites convencionales. Descubre la auténtica esencia del estilo urbano con cada gorra, llevando contigo el legado de innovación y excelencia de Nike en cada paso que des
+                        </p>
+                        <div class="collapse" id="chesscakeingredients">
+                            <div class="card card-body">
+                                <table>
+                                    <tr>
+                                        <td class="cell-header">Huevos:</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-header">Fresas:</td>
+                                        <td>10 </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-header">Crema de queso:</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-header">Galleta Mar&iacute;a:</td>
+                                        <td>1</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="collapse" id="chesscakedetails">
+                            <p>
+                                Precio: $16
+                            </p>
+                        </div>
+                        <a href="http://127.0.0.1:3002/Modelos.html" data-bs-toggle="collapse"
+                            class="btn btn-primary">Modelos</a>
+
+                        <a href="#chesscakedetails" data-bs-toggle="collapse" class="btn btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<h1 id="productName">Chesscake</h1>
+    <img src="assets/images/chesscake.jpg" width="600px" />
+    <h2 id="productDetailsTitle">Detalle</h2>
+    
+
     <hr>
-    <h2>Ficha Técnica</h2>
-    <table>
-        <tr>
-            <td class="cell-header">Peso:</td>
-            <td>2 libras</td>
-        </tr>
-        <tr>
-            <td class="cell-header">Dimensiones:</td>
-            <td>30 x 20 x 10 cm</td>
-        </tr>
-        <tr>
-            <td class="cell-header">Año de Fabricacion:</td>
-            <td>1978</td>
-        </tr>
-        <tr>
-            <td class="cell-header">Condición:</td>
-            <td>Reparado - Buen Estado</td>
-        </tr>
-    </table>
+
+    <p>
+        Precio: $16
+    </p>
+
+    <hr>
+
+    <h2>Ingredientes</h2>
+-->
 </body>
+
 </html>
